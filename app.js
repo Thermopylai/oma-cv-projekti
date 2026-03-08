@@ -129,6 +129,7 @@ app.use((req, res, next) => {
     res.locals.sessionId = req.session.userId; // Käyttäjätiedot navia varten
     // TÄMÄ ON UUTTA: Välitetään tieto istunnosta kaikille näkymille
     res.locals.isLoggedIn = req.session.userId ? true : false;
+    res.locals.googleMapsKey = process.env.GOOGLE_MAPS_API_KEY;
     next();
 });
 
