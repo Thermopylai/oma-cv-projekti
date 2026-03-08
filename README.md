@@ -10,9 +10,9 @@ Tämä on Node.js-pohjainen, dynaaminen CV-sivusto ja yhteydenottojärjestelmä.
 - **Handlebars.js**: Dynaamiset HTML-pohjat, layoutit ja partials-komponentit.
 - **Bootstrap 5 & Bootswatch (Vapor)**: Responsiivinen ulkoasu neon-teemalla.
 - **Google Maps Static API**: Dynaaminen sijaintikartan upotus modaalissa.
-- **update-clock.js: reaaliaikainen kellonajan näyttö, joka päivittyy joka sekunti
-- **theme-toggler.js: automatisoitu tumman/vaalean teeman valinta
-- **Popper.js pudotusvalikko teeman valintaan
+- **update-clock.js**: reaaliaikainen kellonajan näyttö, joka päivittyy joka sekunti
+- **theme-toggler.js**: automatisoitu tumman/vaalean teeman valinta
+- **Popper.js**: pudotusvalikko teeman valintaan
 
 ### Backend
 - **Node.js & Express**: Palvelinlogiikka ja reititys.
