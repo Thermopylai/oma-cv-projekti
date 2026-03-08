@@ -94,6 +94,8 @@ const handlebars = require('express-handlebars').create({
     } 
 }); 
 
+app.set('trust proxy', 1); // Tarvitaan, jos sovellus ajetaan Renderin kaltaisessa ympäristössä, joka käyttää proxyä
+
 // Istuntojen konfigurointi
 app.use(session({
     // Käytetään ympäristömuuttujaa, tai varalla kehitysaikaista avainta
