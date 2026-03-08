@@ -1,0 +1,91 @@
+<nav class="navbar navbar-expand-lg navbar-dark mb-4 shadow">
+  <div class="container">
+    <a class="navbar-brand text-info fw-bold" href="/admin/viestit">
+      <i class="bi bi-person-badge"></i> {{#if nimi}}{{nimi}}{{else}}Minun CV{{/if}}
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        {{#if isLoggedIn}}
+          <li class="nav-item border-start border-secondary ms-lg-2 ps-lg-2">
+                <a class="nav-link text-info {{activeClass path '/admin/viestit'}}" href="/admin/viestit">Viestit</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-danger fw-bold" href="/logout">Logout</a>
+            </li>
+        {{/if}}
+        <li class="nav-item">
+          <a class="nav-link {{activeClass path '/'}}" href="/">Etusivu</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link {{activeClass path '/cv'}}" href="/cv">CV</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link {{activeClass path '/yhteys'}}" href="/yhteys">Ota yhteyttä</a>
+        </li>
+        <li class="nav-link"><span id="clock"></span></li>
+        <li class="nav-item dropdown">
+            <button class="btn btn-link nav-link dropdown-toggle d-flex align-items-center"
+                    id="bd-theme"
+                    type="button"
+                    data-bs-toggle="dropdown"
+                    data-bs-display="static"
+                    aria-expanded="false"
+                    aria-label="Toggle theme (auto)">
+                <i class="bi-circle-half my-1"
+                id="theme-icon-active"
+                aria-hidden="true"></i>
+                <span id="bd-theme-text" class="d-none">Toggle theme</span>
+            </button>
+            <ul class="dropdown-menu dropdown-menu-start"
+                aria-labelledby="bd-theme-text">
+                <li>
+                    <button type="button"
+                            class="dropdown-item d-flex align-items-center"
+                            data-bs-theme-value="light"
+                            aria-pressed="false">
+                        <i class="bi-sun-fill me-2 opacity-50"
+                        id="theme-icon"
+                        aria-hidden="true"></i>
+                        Light
+                        <i class="bi-check2 ms-auto d-none"
+                        id="is-checked"
+                        aria-hidden="true"></i>
+                    </button>
+                </li>
+                <li>
+                    <button type="button"
+                            class="dropdown-item d-flex align-items-center"
+                            data-bs-theme-value="dark"
+                            aria-pressed="false">
+                        <i class="bi-moon-stars-fill me-2 opacity-50"
+                        id="theme-icon"
+                        aria-hidden="true"></i>
+                        Dark
+                        <i class="bi-check2 ms-auto d-none"
+                        id="is-checked"
+                        aria-hidden="true"></i>
+                    </button>
+                </li>
+                <li>
+                    <button type="button"
+                            class="dropdown-item d-flex align-items-center active"
+                            data-bs-theme-value="auto"
+                            aria-pressed="true">
+                        <i class="bi-circle-half me-2 opacity-50"
+                        id="theme-icon"
+                        aria-hidden="true"></i>
+                        Auto
+                        <i class="bi-check2 ms-auto"
+                        id="is-checked"
+                        aria-hidden="true"></i>
+                    </button>
+                </li>
+            </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

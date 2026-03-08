@@ -1,0 +1,31 @@
+{
+  "nimi": "Lauri Tikkanen",
+  "titteli": "Ohjelmistoalan opiskelija",
+  "yhteystiedot": {
+    "sahkoposti": "lauri.tikkanen@gmail.com",
+    "paikkakunta": "Porvoo",
+    "github": "https://github.com/Thermopylai",
+    "linkedin": "https://www.linkedin.com/in/lauritikkanen/"
+  },
+  "koulutus": [
+    { "koulu": "Careeria", "tutkinto": "Ohjelmistokehittäjä", "vuosi": "08/2025 - nykyhetki" },
+    { "koulu": "Careeria", "tutkinto": "Koneistaja", "vuosi": "2023 - 2024" },
+    { "koulu": "SolidWorks", "tutkinto": "CSWA & CSWP", "vuosi": "2024" }
+  ],
+  "tyokokemus": [
+    { "yritys": "PTH-Metalli Oy", "rooli": "Koneistaja", "kuvaus": "CNC-koneistus ja tuotantoprosessien optimointi.", "aika": "2023-2024" },
+    { "yritys": "Arla OY", "rooli": "Koneenhoitaja", "kuvaus": "Prosessinohjaus, tuotantolinjan valvonta ja laadunvarmistus.", "aika": "2022-2023" }
+  ],
+  "taidot": [
+    { "nimi": "JavaScript", "taso": 75 },
+    { "nimi": "Node.js & Express", "taso": 70 },
+    { "nimi": "HTML & CSS (Handlebars)", "taso": 85 },
+    { "nimi": "SQLite, MSSQL", "taso": 80 },
+    { "nimi": "Git & GitHub", "taso": 70 },
+    { "nimi": "C#, C++", "taso": 75 },
+    { "nimi": "WPF, .NET Maui", "taso": 80 },
+    { "nimi": "ASP.NET MVC & Core", "taso": 85 },
+    { "nimi": "SolidWorks, Blender, GibbsCAM", "taso": 90 }
+    
+  ]
+}

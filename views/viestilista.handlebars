@@ -1,0 +1,24 @@
+<h2 class="h3 border-start border-primary border-4 ps-2 mb-4">Saapuneet viestit</h2>
+
+{{#each viestit}}
+    <div class="card mb-3 shadow border border-info border-2 bg-dark position-relative">
+        <div class="card-body">
+            <!-- Poistonappi oikeaan yläkulmaan -->
+            <form action="/admin/viestit/poista" method="POST" class="position-absolute top-0 end-0 m-2">
+                <input type="hidden" name="id" value="{{this.id}}">
+                <button type="submit" class="btn btn-outline-danger btn-sm" onclick="return confirm('Haluatko varmasti poistaa viestin?')">
+                    <i class="bi bi-trash"></i>
+                </button>
+            </form>
+
+            <h5 class="card-title text-primary">{{this.nimi}}</h5>
+            <h6 class="card-subtitle mb-2 text-muted">
+                <i class="bi bi-envelope me-1"></i> {{this.email}} | 
+                <i class="bi bi-clock me-1"></i> {{formatDate this.pvm}}
+            </h6>
+            <p class="card-text border-top pt-2 mt-2">{{this.viesti}}</p>
+        </div>
+    </div>
+{{else}}
+    <div class="alert alert-info">Ei saapuneita viestejä.</div>
+{{/each}}

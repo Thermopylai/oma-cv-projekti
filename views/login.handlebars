@@ -1,0 +1,47 @@
+<div class="row justify-content-center align-items-center" style="min-height: 70vh;">
+    <div class="col-md-4">
+        <div class="card shadow-lg border-info border-2 bg-dark">
+            <div class="card-header bg-transparent border-info text-center py-4">
+                <h2 class="text-info fw-bold mb-0">
+                    <i class="bi bi-shield-lock-fill"></i> ADMIN
+                </h2>
+                <small class="text-muted">Lauri Tikkanen<br/>CV - Hallinta</small>
+            </div>
+            <div class="card-body p-4">
+                
+                {{#if error}}
+                    <div class="alert alert-danger bg-danger text-white border-0 shadow-sm mb-4">
+                        <i class="bi bi-exclamation-triangle-fill"></i> {{error}}
+                    </div>
+                {{/if}}
+
+                <form action="/login" method="POST">
+                    <div class="mb-4">
+                        <label class="form-label text-info small fw-bold">KÄYTTÄJÄTUNNUS</label>
+                        <div class="input-group">
+                            <span class="input-group-text bg-dark border-info text-info"><i class="bi bi-person"></i></span>
+                            <input type="text" name="username" class="form-control bg-primary text-white border-info" required autofocus>
+                        </div>
+                    </div>
+                    
+                    <div class="mb-4">
+                        <label class="form-label text-info small fw-bold">SALASANA</label>
+                        <div class="input-group">
+                            <span class="input-group-text bg-dark border-info text-info"><i class="bi bi-key"></i></span>
+                            <input type="password" name="password" class="form-control bg-primary text-white border-info" required>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn btn-info w-100 fw-bold shadow-sm">
+                        KIRJAUDU SISÄÄN
+                    </button>
+                </form>
+            </div>
+            <div class="card-footer bg-transparent border-0 text-center pb-4">
+                <a href="/" class="text-muted text-decoration-none small">
+                    <i class="bi bi-arrow-left"></i> Takaisin etusivulle
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
